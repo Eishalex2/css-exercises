@@ -7,21 +7,40 @@ body {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  padding: 8px;
 }
 
 .title {
   background: #e3f4ff;
+  /*display: block;*/
+  padding: 8px; 
+/*You're doubling up the margin 8px here + 8px padding from .card. Remove
+and just have margin-top and margin-bottom. */
+/*Why do you have to set margin-top to zero? Because h1 has a default
+margin! Which is adding to to 8px of padding from .card. So you have to
+set top margin to 0, so that the only "space" will be the 8px of padding
++0 margin. */
+  margin-bottom: 8px;
+  margin-top: 0;
+  font-size: 16px;
 }
 
 .content {
   background: #e3f4ff;
+  margin-bottom: 8px;
+  padding: 16px 8px;
 }
 
 .button-container {
   background: #e3f4ff;
+  text-align: center;
+  padding: 8px;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  display: block;
+  margin: auto;
+  padding: 8px 24px;
 }
