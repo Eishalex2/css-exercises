@@ -45,7 +45,7 @@ ul {
 }
 
 .sidebar {
-  background-color: #FF7755;
+  background-color: #C50208;
   grid-row: 2 / 4;
   display: grid;
   gap: 50px;
@@ -75,6 +75,11 @@ ul {
 
 .nav {
   background-color: #FF7755;
+}
+
+.nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .nav ul {
@@ -129,5 +134,5 @@ ul {
 
 .footer p {
   font-size: 13px;
-  font-weight: normal;  
+  font-weight: normal;
 }
